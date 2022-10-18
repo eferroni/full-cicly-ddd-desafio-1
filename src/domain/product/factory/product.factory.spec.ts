@@ -9,13 +9,13 @@ describe("Product Factory unit test", () => {
     expect(product.constructor.name).toBe("Product");
   });
 
-  it("should create a product type b", () => {
-    const product = ProductFactory.create("b", "Product B", 2);
-    expect(product.id).toBeDefined();
-    expect(product.name).toBe("Product B");
-    expect(product.price).toBe(4);
-    expect(product.constructor.name).toBe("ProductB");
-  });
+  // it("should create a product type b", () => {
+  //   const product = ProductFactory.create("b", "Product B", 2);
+  //   expect(product.id).toBeDefined();
+  //   expect(product.name).toBe("Product B");
+  //   expect(product.price).toBe(4);
+  //   expect(product.constructor.name).toBe("ProductB");
+  // });
 
   it("should throw an error fo invalid type", () => {
     expect(() => {

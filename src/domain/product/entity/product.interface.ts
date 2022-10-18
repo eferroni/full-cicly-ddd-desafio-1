@@ -1,5 +1,6 @@
+import Notification from "../../@shared/notification/notification";
+
 export default interface ProductInterface {
-  _id: string;
   _name: string;
   _price: number;
   get id(): string;
